@@ -1,0 +1,44 @@
+import Link from 'next/link';
+
+const SignIn=()=> {
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 flex items-center justify-center px-4" dir="rtl">
+      <div className="bg-white p-8 rounded-xl shadow-lg w-full max-w-md">
+        <h1 className="text-2xl font-bold text-center text-gray-800 mb-6">تسجيل الدخول</h1>
+        
+        <form>
+          <div className="mb-4">
+            <label className="block text-gray-700 mb-2">البريد الإلكتروني</label>
+            <input
+              type="email"
+              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+              placeholder="أدخل بريدك الإلكتروني"
+            />
+          </div>
+          <div className="mb-6">
+            <label className="block text-gray-700 mb-2">كلمة المرور</label>
+            <input
+              type="password"
+              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+              placeholder="أدخل كلمة المرور"
+            />
+          </div>
+          <button
+            type="submit"
+            className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg transition"
+          >
+            تسجيل الدخول
+          </button>
+        </form>
+
+        <p className="mt-4 text-center text-gray-600">
+          ليس لديك حساب؟{' '}
+          <Link href="/auth/signup" className="text-blue-600 hover:underline">
+            اشترك الآن
+          </Link>
+        </p>
+      </div>
+    </div>
+  );
+}
+export default SignIn;
