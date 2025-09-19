@@ -34,7 +34,7 @@ const AdminDashboard=()=>{
             </button>
           </div>
           <div className="bg-white p-6 rounded-lg shadow">
-            <h3 className="text-lg font-semibold mb-4">إعدادات الموقع</h3>
+            <h3 className="text-lg font-semibold mb-5">إعدادات الموقع</h3>
             <Link href="/dashboard/settings" className="text-blue-600 hover:underline block">
               تحرير الشعار، الألوان، النصوص
             </Link>
